@@ -1,0 +1,23 @@
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repo"
+version = "0.1.0"
+description = "Impact of Repo Rates on Delta"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "plotly",
+    "streamlit",
+    "yfinance",
+]
+
+[tool.setuptools]
+packages = ["core", "data", "app"]
